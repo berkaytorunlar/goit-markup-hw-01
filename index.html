@@ -26,18 +26,18 @@
 
                         <h4>Tayfur Çiçekçi</h4>
 
-    
-<img src="images/lapsekili.jpg" alt="Lapsekili Tayfur"width="300" height="200">
+ 
+                        
 <!DOCTYPE html>
 <html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Hareketli Arka Plan</title>
     <style>
         body {
-            background-image: url('images/lapsekili-tayfur-lapsekili.gifgi');
+            background-image: url('images/lapsekili-tayfur-lapsekili.gif');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -46,12 +46,18 @@
 </head>
 
 <body>
+    <h1>Hareketli Arka Plan Örneği</h1>
+    <p>Bu sayfanın arka planı hareketlidir.</p>
 
-</body>
-
-</html>
-
-                    
-
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const colors = ["#ff7e5f", "#feb47b", "#6a11cb", "#2575fc"];
+            let i = 0;
+            setInterval(() => {
+                document.body.style.backgroundColor = colors[i];
+                i = (i + 1) % colors.length;
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
