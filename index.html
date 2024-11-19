@@ -34,7 +34,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hareketli Arka Plan</title>
+
     <style>
         body {
             background-image: url('images/lapsekili-tayfur-lapsekili.gif');
@@ -46,8 +46,7 @@
 </head>
 
 <body>
-    <h1>Hareketli Arka Plan Örneği</h1>
-    <p>Bu sayfanın arka planı hareketlidir.</p>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -60,4 +59,57 @@
         });
     </script>
 </body>
+</html><!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazılar Renk Değiştiriyor</title>
+    <style>
+        /* Animasyon tanımlaması */
+        @keyframes renkDegistir {
+            0% {
+                color: red;
+            }
+
+            /* Başlangıç rengi kırmızı */
+            25% {
+                color: blue;
+            }
+
+            /* Maviye geçiş */
+            50% {
+                color: green;
+            }
+
+            /* Yeşile geçiş */
+            75% {
+                color: orange;
+            }
+
+            /* Turuncuya geçiş */
+            100% {
+                color: purple;
+            }
+
+            /* Mor ile tamamla */
+        }
+
+        /* Yazıya animasyonu uygula */
+        .renkli-yazi {
+            font-size: 2rem;
+            /* Yazı boyutu */
+            font-weight: bold;
+            /* Kalın yazı */
+            animation: renkDegistir 3s infinite;
+            /* 3 saniyede bir tekrar et */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="renkli-yazi">Bu yazı sürekli renk değiştiriyor!</h1>
+</body>
+
 </html>
