@@ -1,105 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-    <h1>Gelip Çöker Yalnızlıklar-Lapsekili Tayfur</h1><head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yazılar Renk Değiştiriyor</title>
-        <style>
-            /* Animasyon tanımlaması */
-            @keyframes renkDegistir {
-                0% {
-                    color: red;
-                }
-    
-                /* Başlangıç rengi kırmızı */
-                25% {
-                    color: blue;
-                }
-    
-                /* Maviye geçiş */
-                50% {
-                    color: green;
-                }
-    
-                /* Yeşile geçiş */
-                75% {
-                    color: orange;
-                }
-    
-                /* Turuncuya geçiş */
-                100% {
-                    color: purple;
-                }
-    
-                /* Mor ile tamamla */
-            }
-    
-            /* Yazıya animasyonu uygula */
-            .renkli-yazi {
-                font-size: 2rem;
-                /* Yazı boyutu */
-                font-weight: bold;
-                /* Kalın yazı */
-                animation: renkDegistir 3s infinite;
-                /* 3 saniyede bir tekrar et */
-            }
-        </style>
-    </head>
-    
-    <body>
-        <audio src="lsp.mp3" controls></audio>
-        <h1 class="renkli-yazi">
-            <p>Hüzün kokar hasret kokar her yanım</p>
-            <p>Hicran olur yüreğime geceler</p>
-            <p>Yağar gökten ince ince bir sızı</p>
-            <p>Yağmur olur gözlerime geceler</p>
-    
-            <p>Gelip çöker yalnızlıklar</p>
-            <p>Dört yanımda taş duvarlar</p>
-            <p>Zindanım olur geceler</p>
-            <p>Kurşun gibi şu gönlüme</p>
-            <p>Dert yağdırır dertlerime</p>
-            <p>Düşmanım olur geceler</p>
-    
-            <p>Uzaklardan sanki yarim seslenir</p>
-            <p>Garip gönlüm biraz daha hislenir</p>
-            <p>Gözyaşlarım karanlığa gizenir</p>
-            <p>Bin dert katar dertlerime geceler </p>
-            <h4>Tayfur Çiçekçi</h4>
-        </h1>
-    </body>
-    
-    </html>
-
-                        
-
- 
-                        
-<!DOCTYPE html>
 <html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Gelip Çöker Yalnızlıklar - Lapsekili Tayfur</title>
     <style>
+        /* Arka plan resmi */
         body {
             background-image: url('images/lapsekili-tayfur-lapsekili.gif');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Animasyon tanımlaması */
+        @keyframes renkDegistir {
+            0% {
+                color: red;
+            }
+
+            25% {
+                color: blue;
+            }
+
+            50% {
+                color: green;
+            }
+
+            75% {
+                color: orange;
+            }
+
+            100% {
+                color: purple;
+            }
+        }
+
+        /* Yazıya animasyonu uygula */
+        .renkli-yazi {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            animation: renkDegistir 3s infinite;
+        }
+
+        /* Şarkıcı adı */
+        .sanatci {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 10px;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
+    <!-- Şarkı çalar -->
+    <audio src="lsp.mp3" controls loop style="display: block; margin: 20px auto;"></audio>
 
+    <!-- Şarkı sözleri -->
+    <div class="renkli-yazi">
+        <p>Gelip çöker yalnızlıklar</p>
+        <p>Dört yanımda taş duvarlar</p>
+        <p>Zindanım olur geceler</p>
+        <p>Kurşun gibi şu gönlüme</p>
+        <p>Dert yağdırır dertlerime</p>
+        <p>Düşmanım olur geceler</p>
+    </div>
 
+    <!-- Şarkıcı adı -->
+    <div class="renkli-yazi sanatci">
+        Tayfur Çiçekçi
+    </div>
+
+    <!-- Dinamik arka plan rengi değişimi -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const colors = ["#ff7e5f", "#feb47b", "#6a11cb", "#2575fc"];
@@ -111,6 +89,5 @@
         });
     </script>
 </body>
-</html><!DOCTYPE html>
-<html lang="tr">
-    
+
+</html>
