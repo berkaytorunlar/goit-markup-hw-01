@@ -10,46 +10,44 @@
         margin: 0;
         padding: 0;
       }
-      header,
-      footer {
+      header {
         background-color: #333;
         color: white;
-        text-align: center;
-        padding: 20px;
+        padding: 10px 0;
       }
-      nav ul {
-        list-style: none;
-        padding: 0;
-      }
-      nav ul li {
-        display: inline;
-        margin: 0 15px;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
       }
       nav a {
         color: white;
         text-decoration: none;
+        padding: 10px;
+        font-weight: 700; /* Kalın metin için eklendi */
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
       }
       main {
         padding: 20px;
-        text-align: center;
       }
-      .team section {
-        display: inline-block;
-        margin: 20px;
+      section {
+        margin: 20px 0;
       }
-      img {
-        border-radius: 10px;
-      }
-      button {
-        background-color: #007bff;
+      footer {
+        background-color: #333;
         color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
+        text-align: center;
+        padding: 20px 0;
       }
     </style>
   </head>
   <body>
+    <!--Header Başı-->
     <header>
       <nav>
         <a href="./index.html">WebStudio</a>
@@ -60,25 +58,58 @@
         </ul>
       </nav>
       <address>
-        <p>info@devstudio.com | +11(000) 111-11-11</p>
+        <p>info@devstudio.com</p>
+        <p>+11(000) 111-11-11</p>
       </address>
     </header>
+    <!--Header Sonu-->
+
     <main>
-      <section>
+      <!--1.Section Başı-->
+      <div>
         <h2>Effective Solutions for Your Business</h2>
         <button id="orderService" type="button">Order Service</button>
-      </section>
-      <section>
-        <h3>Our Values</h3>
-        <p>
-          We believe in Strategy, Punctuality, Diligence, and Technologies to
-          drive success.
-        </p>
-      </section>
-      <div class="team">
+      </div>
+      <!--1.Section Sonu-->
+
+      <!--2.Section Başı-->
+      <div>
+        <section>
+          <h3>Strategy</h3>
+          <p>
+            Our goal is to identify the business problem to walk away with the
+            perfect and creative solution.
+          </p>
+        </section>
+        <section>
+          <h3>Punctuality</h3>
+          <p>
+            Bring the key message to the brand's audience for the best price
+            within the shortest possible time.
+          </p>
+        </section>
+        <section>
+          <h3>Diligence</h3>
+          <p>
+            Research and confirm brands that present the strongest digital
+            growth opportunities and minimize risk.
+          </p>
+        </section>
+        <section>
+          <h3>Technologies</h3>
+          <p>
+            Design practice focused on digital experiences. We bring forth a
+            deep passion for problem-solving.
+          </p>
+        </section>
+      </div>
+      <!--2.Section Sonu-->
+
+      <!--3.Section Başı-->
+      <div>
         <h1>Our Team</h1>
         <section>
-          <img src="images/img1.jpg" width="200" alt="MARK Guerreo" />
+          <img src="images/img1.jpg" width="200" alt="Mark Guerreo" />
           <h3>Mark Guerreo</h3>
           <p>Product Designer</p>
         </section>
@@ -98,13 +129,17 @@
           <p>UI Designer</p>
         </section>
       </div>
+      <!--3.Section Sonu-->
     </main>
+
+    <!--Footer Başı-->
     <footer>
       <h3>WebStudio</h3>
       <p>
-        Increase the flow of customers and sales with digital marketing & growth
-        solutions.
+        Increase the flow of customers and sales of business with digital
+        marketing & growth solutions.
       </p>
     </footer>
+    <!--Footer Sonu-->
   </body>
 </html>
