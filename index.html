@@ -4,21 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ÖDEV</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .logo_web_studio {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+      }
+
+      .logo_web_studio span {
+        color: #2e2f42;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        color: #404bbf;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      address ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      address a {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+      }
+
+      address a:hover,
+      address a:focus {
+        color: #404bbf;
+      }
+    </style>
   </head>
   <body>
     <!--Header Başı-->
     <header>
       <nav>
-        <a href="./index.html" class="logo_web_studio">WebStudio</a>
+        <a href="./index.html" class="logo_web_studio">
+          Web<span class="studio">Studio</span>
+        </a>
         <ul>
-          <li><a href="/">Studio</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">Contacts</a></li>
+          <li>
+            <a href="./index.html" class="home_link">Home</a>
+          </li>
+          <li>
+            <a href="/" class="portfolio_link">Portfolio</a>
+          </li>
+          <li>
+            <a href="/" class="contacts_link">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <address>
-        <p>info@devstudio.com</p>
-        <p>+11(000) 111-11-11</p>
+      <address class="contact_info">
+        <p>
+          <a href="mailto:info@devstudio.com" class="email_link"
+            >info@devstudio.com</a
+          >
+        </p>
+        <p>
+          <a href="tel:+110001111111" class="phone_link">+11(000) 111-11-11</a>
+        </p>
       </address>
     </header>
     <!--Header Sonu-->
@@ -57,7 +145,6 @@
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </p>
-          <p></p>
         </section>
       </div>
       <!--2.Section Sonu-->
